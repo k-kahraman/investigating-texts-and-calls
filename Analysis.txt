@@ -1,0 +1,32 @@
+Runtime Analysis for Each Task;
+===============================
+
+0. Two print statements only access to first and last elements, accessing to an element in list is O(1).
+So the code is running on without any loops with constant time of O(1)
+
+================================
+
+1. For each text in texts, runtime here is O(N) where N is length of the texts.
+For each call in calls, runtime here is O(M) where M is length of the calls.
+There are also adding and accessing to elements which all O(1), we can eliminate these O(1)'s 
+Overall runtime is O(N + M).
+
+================================
+
+2. There is one for loop to fill time_per_number_dict. This loop iterates over all call list, N items.
+max() function has a O(N) runtime speed. In the print statement we directly access to dictionary element using key so runtime is O(1)
+Overall runtime is O(2N+1) => O(N)
+
+===============================
+
+3. Part A has a for loop with N calls so runtime is O(N) and also a sorting with O(Nlog(N)) from there we have O(N) runtime
+Part B has only one for loop with N calls so it's runtime is also O(N)
+
+Overall runtime is O(2N) => O(N)
+
+==============================
+
+4. There are two for loops one for calls which has a runtime of O(N) where N is number of calls, and one for texts O(M) where M is number of texts.
+Sorting has a runtime of O(NlogN) so;
+
+Overall runtime is O(N + M + nlogn) => O(N + M).

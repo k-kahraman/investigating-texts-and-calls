@@ -20,3 +20,9 @@ Print messages:
 "Last record of calls, <incoming number> calls <answering number> at time <time>, lasting <during> seconds"
 """
 
+# Printing the text and calls data, because both data are ordered in time we can easily access to first and last
+# Accessing to a list member in Python is O(N) so we have O(N) runtime
+print(
+    f"First record of texts, {texts[0][0]} texts {texts[0][1]} at time {texts[0][2]}")
+print(
+    f"Last record of calls, {calls[-1][0]} calls {calls[-1][1]} at time {calls[-1][2]}, lasting {calls[-1][3]} seconds")
